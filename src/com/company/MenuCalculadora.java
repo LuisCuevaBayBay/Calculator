@@ -11,8 +11,6 @@ public class MenuCalculadora {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Bienvenido a la calculadora");
-        System.out.println("");
-        System.out.println("");
         System.out.println("Que operaciones desea realizar?");
         System.out.println("Las opciones son: ");
         System.out.println("\t 1. Suma");
@@ -21,10 +19,12 @@ public class MenuCalculadora {
         System.out.println("\t 4. Division ");
         System.out.println("\t 5. Exponentes");
         System.out.println("\t 6. Raiz Cuadrada");
-        System.out.println("\t 7. Fracciones");
-        System.out.println("\t 8. Raiz Cubica");
-        System.out.println("\t 9. Salir del programa");
-        System.out.println();
+        System.out.println("\t 7. Suma de Fracciones");
+        System.out.println("\t 8. Resta de Fracciones");
+        System.out.println("\t 9. Multiplicacion de Fracciones ");
+        System.out.println("\t 10. Division de Fracciones");
+        System.out.println("\t 11. Raiz Cubica");
+        System.out.println("\t 12. Salir del programa");
 
         int j2 = sc.nextInt();
         switch (j2){
@@ -44,10 +44,28 @@ public class MenuCalculadora {
                 Division division = new Division();
                 division.TotalDivision();
                 break;
-
-
+            case 5:
+                Exponente exponente = new Exponente();
+                exponente.totalExponente();
+                break;
+            case 6:
+                RaizCuadrada raizCuadrada = new RaizCuadrada();
+                raizCuadrada.TotalSQRT();
+                break;
+            case 7:
+                SumaFracciones sumaFracciones = new SumaFracciones();
+                sumaFracciones.SumaFracc();
+                break;
+            case 8:
+                RestaFracciones restaFracciones = new RestaFracciones();
+                restaFracciones.RestaFracc();
+                break;
+            case 9:
+                MultiplicacionFracciones multiplicacionFracciones = new MultiplicacionFracciones();
+                multiplicacionFracciones.MultiFracc();
+            case 10:
+                DivisionFracciones divisionFracciones = new DivisionFracciones();
+                divisionFracciones.DivFracc();
         }
-
-
     }
     }
