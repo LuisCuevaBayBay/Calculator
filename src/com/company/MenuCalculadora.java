@@ -63,9 +63,16 @@ public class MenuCalculadora {
             case 9:
                 MultiplicacionFracciones multiplicacionFracciones = new MultiplicacionFracciones();
                 multiplicacionFracciones.MultiFracc();
+                break;
             case 10:
                 DivisionFracciones divisionFracciones = new DivisionFracciones();
                 divisionFracciones.DivFracc();
+                break;
+            case 11:
+                RaizCubica raizCubica = new RaizCubica();
+                raizCubica.RaizALa3();
+                break;
         }
     }
+
     }
